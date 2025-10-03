@@ -1,0 +1,10 @@
+program: run_experiment.py
+method: grid
+metric:
+  name: quantized_acc
+  goal: maximize
+parameters:
+  wbits:
+    values: [8, 6, 4, 2]
+  abits:
+    values: [8, 4]
